@@ -1,0 +1,20 @@
+{
+  "name": "ohmyfood.github.io",
+  "version": "1.0.0",
+  "description": "Troisième projet du parcours \"Développeur web\" chez OpenClassroom",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss --use autoprefixer -b 'last 4 versions' ./public/css/style.css -o ./public/css/style.prefix.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagharbi/ohmyfood.github.io.git"
+  },
+  "author": "Nouha GHARBI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nagharbi/ohmyfood.github.io/issues"
+  },
+  "homepage": "https://github.com/nagharbi/ohmyfood.github.io#readme"
+}
