@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.description__btn, .header {
+  box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.25);
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -75,7 +79,6 @@ a {
 
 .header {
   padding: 16px 16px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
 }
 .header__img {
   width: 144px;
@@ -90,6 +93,26 @@ a {
 }
 .location__icon {
   margin-right: 16px;
+}
+
+.description {
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 32px;
+}
+.description__title {
+  font-family: "Roboto", sans-serif;
+}
+.description__text {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 32px;
+}
+.description__btn {
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 100px;
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

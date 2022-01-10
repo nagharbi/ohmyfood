@@ -9,3 +9,18 @@
         margin-right: 16px;
     }
 }
+.description{
+    background-color: $bgcolor-secondary;
+    text-align: center;
+    padding: 32px;
+    &__title {
+        font-family: $font-txt;
+    }
+    &__text {
+        font-family: $font-txt;
+        margin-bottom: 32px;
+    }
+    &__btn {
+       @include button;
+    }
+}
