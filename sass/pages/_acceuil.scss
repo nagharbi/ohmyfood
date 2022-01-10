@@ -1,0 +1,11 @@
+.location{
+    background-color: $bgcolor-primary;
+    @extend %flexcenter;
+    padding: 16px;
+    &__text{
+        font-family: $font-txt;
+    }
+    &__icon{
+        margin-right: 16px;
+    }
+}

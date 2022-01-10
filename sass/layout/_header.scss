@@ -1,7 +1,5 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flexcenter;
     padding: 16px 16px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
     &__img {
