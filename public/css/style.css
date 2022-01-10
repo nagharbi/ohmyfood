@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");
@@ -27,6 +28,7 @@
   100% {
     opacity: 0;
     z-index: -10;
+    /*pour mettre le spinner au dessous de contenu de page */
   }
 }
 html, body, p, h1, h2, h3, h4 {
@@ -71,6 +73,7 @@ a {
   }
 }
 .spinner::before {
+  /*ajouter un content vide pour agisse comme un sélecteur , on peut ajouter un style css*/
   content: "";
   position: absolute;
   top: -6px;

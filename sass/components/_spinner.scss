@@ -23,6 +23,7 @@
     border: 6px solid rgba($color-primary, 0.2);
     border-radius: 50%;
     &::before {
+        /*ajouter un content vide pour agisse comme un sélecteur , on peut ajouter un style css*/      
         content: "";
         position: absolute;
         top: -6px;
