@@ -12,8 +12,12 @@
 
 .spinner {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 42%;
+    @include desktop{
+        top: 50%;
+        left: 50%;
+    }
     width: 60px;
     height: 60px;
     border: 6px solid rgba($color-primary, 0.2);
