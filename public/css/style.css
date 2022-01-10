@@ -124,5 +124,8 @@ a {
   border-radius: 100px;
   font-family: "Roboto", sans-serif;
 }
+.description__btn:hover {
+  opacity: 0.75;
+}
 
 /*# sourceMappingURL=style.css.map */

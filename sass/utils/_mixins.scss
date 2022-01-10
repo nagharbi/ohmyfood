@@ -5,6 +5,9 @@
     border-radius: 100px;
     font-family: $font-txt;
     @extend %shadow;
+    &:hover{
+        opacity:0.75 ;
+    }
 }
 @mixin tablet {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
