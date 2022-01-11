@@ -2,7 +2,8 @@
     @extend %flexcenter;
     padding: 16px 16px;
     @extend %shadow;
-    &__img {
-        width: 144px;
+    &__title {
+        font-weight: 300;
+        font-family: $font-title ;
     }
 }

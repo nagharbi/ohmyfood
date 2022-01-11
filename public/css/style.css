@@ -91,8 +91,9 @@ a {
 .header {
   padding: 16px 16px;
 }
-.header__img {
-  width: 144px;
+.header__title {
+  font-weight: 300;
+  font-family: "Shrikhand";
 }
 
 .location {
