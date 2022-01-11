@@ -1,3 +1,4 @@
+/*1 ere section*/ 
 .location{
     background-color: $bgcolor-primary;
     @extend %flexcenter;
@@ -9,6 +10,7 @@
         margin-right: 16px;
     }
 }
+/* 2eme section*/
 .description{
     background-color: $bgcolor-secondary;
     text-align: center;
@@ -24,5 +26,47 @@
     }
     &__btn {
        @include button;
+    }
+}
+/* 3eme section*/
+.manuel{
+    padding: 8px 20px;
+    font-family: $font-txt;
+    &__container{
+        @include desktop{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    &__step
+    {
+        background-color: $bgcolor-secondary;
+        display: flex;
+        flex: 1;
+        height: 75px;
+        margin:20px 32px;
+        align-items: center;
+        border-radius: 25px ;
+        @extend %shadow;
+        &:hover{
+            background-color: rgba($color:$color-primary, $alpha: 0.1);
+            .manuel__icon{
+                color:$color-primary;
+            }
+        }
+    }
+    &__item{
+        background-color: $color-primary;
+        border-radius: 50%;
+        width: 16px ;
+        text-align: center;
+        color: white;
+        padding: 5px 8px;
+        margin-left: -14px;
+    } 
+    &__icon{
+        width: 48px;
+        text-align: center;
+        color: $bgcolor-tertiary;
     }
 }

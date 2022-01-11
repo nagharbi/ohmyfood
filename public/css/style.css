@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.description__btn, .header {
+.manuel__step, .description__btn, .header {
   box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.25);
 }
 
@@ -96,6 +96,7 @@ a {
   font-family: "Shrikhand";
 }
 
+/*1 ere section*/
 .location {
   background-color: #EAEAEA;
   padding: 16px;
@@ -107,6 +108,7 @@ a {
   margin-right: 16px;
 }
 
+/* 2eme section*/
 .description {
   background-color: #F6F6F6;
   text-align: center;
@@ -130,6 +132,47 @@ a {
 }
 .description__btn:hover {
   opacity: 0.75;
+}
+
+/* 3eme section*/
+.manuel {
+  padding: 8px 20px;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 1024px) {
+  .manuel__container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.manuel__step {
+  background-color: #F6F6F6;
+  display: flex;
+  flex: 1;
+  height: 75px;
+  margin: 20px 32px;
+  align-items: center;
+  border-radius: 25px;
+}
+.manuel__step:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+.manuel__step:hover .manuel__icon {
+  color: #9356DC;
+}
+.manuel__item {
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 16px;
+  text-align: center;
+  color: white;
+  padding: 5px 8px;
+  margin-left: -14px;
+}
+.manuel__icon {
+  width: 48px;
+  text-align: center;
+  color: #818181;
 }
 
 /*# sourceMappingURL=style.css.map */
