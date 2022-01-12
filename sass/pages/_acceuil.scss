@@ -77,11 +77,21 @@
     &__title{
         padding: 15px;
     }
+    &__container{
+        @include tablet{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
 }
 .card{
     border-radius: 20px;
     @extend %fonttext;
     width: 92%;  
+    @include tablet{
+        width: 45%;
+    }
     margin-bottom: 27px;
     margin-left: 15px;
     background-color: #fff;
@@ -128,3 +138,25 @@
         }
     }
 }
+.footer{
+    background-color: #353535;
+    color: #fff;
+    &__title{
+        @extend %fonttitle;
+        padding-top: 13px;
+        margin-left: 46px;
+    }
+  }
+  .footer__container{
+      display: flex;
+      flex-direction: column;
+  }
+  .footer__élement{
+    margin: 8px;
+  }
+  .élement__footer1{
+      padding: 14px;
+  }
+  .élement__footer2{
+      padding: 7px;
+  }
