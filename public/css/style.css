@@ -12,6 +12,14 @@
   box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.25);
 }
 
+.card, .manuel, .description__btn, .description__text, .description__title, .location__text {
+  font-family: "Roboto", sans-serif;
+}
+
+.header__title {
+  font-size: "Shrikhand";
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -93,16 +101,12 @@ a {
 }
 .header__title {
   font-weight: 300;
-  font-family: "Shrikhand";
 }
 
 /*1 ere section*/
 .location {
   background-color: #EAEAEA;
   padding: 16px;
-}
-.location__text {
-  font-family: "Roboto", sans-serif;
 }
 .location__icon {
   margin-right: 16px;
@@ -116,11 +120,9 @@ a {
   padding-bottom: 64px;
 }
 .description__title {
-  font-family: "Roboto", sans-serif;
   padding-bottom: 20px;
 }
 .description__text {
-  font-family: "Roboto", sans-serif;
   padding-bottom: 38px;
 }
 .description__btn {
@@ -128,7 +130,6 @@ a {
   color: white;
   padding: 12px 24px;
   border-radius: 100px;
-  font-family: "Roboto", sans-serif;
 }
 .description__btn:hover {
   opacity: 0.75;
@@ -137,7 +138,6 @@ a {
 /* 3eme section*/
 .manuel {
   padding: 8px 20px;
-  font-family: "Roboto", sans-serif;
 }
 @media screen and (min-width: 1024px) {
   .manuel__container {
@@ -173,6 +173,65 @@ a {
   width: 48px;
   text-align: center;
   color: #818181;
+}
+
+/*4 eme section*/
+.restaurant {
+  background-color: #F6F6F6;
+  width: 100%;
+}
+.restaurant__title {
+  padding: 15px;
+}
+
+.card {
+  border-radius: 20px;
+  width: 92%;
+  margin-bottom: 27px;
+  margin-left: 15px;
+  background-color: #fff;
+  position: relative;
+}
+.card__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.card__tagged {
+  border: 1px solid #99E2D0;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  color: #1b6150;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 4px;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.card__heart {
+  font-size: 25px;
+  display: flex;
+  position: relative;
+  width: 40px;
+  height: 32px;
+  cursor: pointer;
+}
+.card__heart :nth-child(2) {
+  color: transparent;
+  transition: all 350ms;
+}
+.card__heart :nth-child(2):hover {
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  transform: scale(1.2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
 }
 
 /*# sourceMappingURL=style.css.map */

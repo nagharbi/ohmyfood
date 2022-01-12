@@ -6,3 +6,9 @@
 %shadow{
     box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.25);
 }
+%fonttext{
+    font-family: $font-txt;
+}
+%fonttitle{
+    font-size: $font-title;
+}

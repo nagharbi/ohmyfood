@@ -4,6 +4,6 @@
     @extend %shadow;
     &__title {
         font-weight: 300;
-        font-family: $font-title ;
+        @extend %fonttitle ;
     }
 }

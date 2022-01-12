@@ -3,7 +3,7 @@
     color: white;
     padding: 12px 24px;
     border-radius: 100px;
-    font-family: $font-txt;
+    @extend %fonttext;
     @extend %shadow;
     &:hover{
         opacity:0.75 ;
