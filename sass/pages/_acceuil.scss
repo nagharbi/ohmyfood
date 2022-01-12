@@ -138,25 +138,3 @@
         }
     }
 }
-.footer{
-    background-color: #353535;
-    color: #fff;
-    &__title{
-        @extend %fonttitle;
-        padding-top: 13px;
-        margin-left: 46px;
-    }
-  }
-  .footer__container{
-      display: flex;
-      flex-direction: column;
-  }
-  .footer__élement{
-    margin: 8px;
-  }
-  .élement__footer1{
-      padding: 14px;
-  }
-  .élement__footer2{
-      padding: 7px;
-  }
