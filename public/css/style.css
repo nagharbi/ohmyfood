@@ -2,22 +2,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");
-.order, .location, .header {
+.order, .menu__icon, .menu__checked, .location, .header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.menu__price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .order__btn, .menu__container, .card, .manuel__step, .description__btn, .header {
   box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.25);
 }
 
-.order__btn, .menu__subtitle, .menu__title, .card, .manuel, .description__btn, .description__text, .description__title, .location__text, .footer__element {
+.order__btn, .menu__description, .menu__subtitle, .menu__title, .card, .manuel, .description__btn, .description__text, .description__title, .location__text, .footer__element {
   font-family: "Roboto", sans-serif;
 }
 
 .lunch__title, .footer__title, .header__title {
   font-family: "Shrikhand";
+}
+
+.menu__content, .menu__description, .menu__subtitle {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .lunch__heart, .card__heart {
@@ -58,6 +71,14 @@
     opacity: 0;
     z-index: -10;
     /*pour mettre le spinner au dessous de contenu de page */
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 html, body, p, h1, h3, h4 {
@@ -307,6 +328,13 @@ main {
 .lunch__container {
   padding-bottom: 33px;
 }
+@media screen and (min-width: 1024px) {
+  .lunch__container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 25px 0 18px;
+  }
+}
 .lunch__title {
   padding: 0 0 1px 35px;
 }
@@ -315,24 +343,72 @@ main {
   right: 32px;
 }
 
+.menu {
+  flex: 1;
+  max-width: 100%;
+  padding: 0 16px;
+  overflow: hidden;
+}
 .menu__container {
+  display: flex;
+  overflow: hidden;
   background-color: #fff;
-  padding-left: 9px;
+  padding: 16px;
   border-radius: 13px;
-  margin-bottom: 13px;
-  margin-left: 13px;
+  margin: 16px 0;
   width: 92%;
   cursor: pointer;
+  animation: appear 0.6s;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+.menu__container:hover .menu__checked {
+  margin-right: -1rem;
 }
 .menu__title {
+  position: relative;
+  text-transform: uppercase;
   font-weight: normal;
-  padding: 17px;
+  padding: 12px 0;
 }
-.menu__title:hover {
-  text-decoration: 5px underline #818181;
+.menu__title::after {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 4px;
+  left: 1px;
+  bottom: 4px;
+  background-color: #99E2D0;
 }
+.menu__price {
+  font-weight: bold;
+}
+.menu__content {
+  flex: 1;
+}
+.menu__checked {
+  background-color: #99E2D0;
+  margin: -16px -80px -16px 16px;
+  width: 64px;
+  transition-duration: 0.5s;
+}
+.menu__icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+.menu:hover .menu__icon {
+  transform: rotate(0);
+}
+.menu__fa-check {
+  color: #99E2D0;
+}
+
 .order {
-  padding: 48px 0;
+  padding-bottom: 24px;
 }
 .order__btn {
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
@@ -342,6 +418,27 @@ main {
 }
 .order__btn:hover {
   opacity: 0.75;
+}
+@media screen and (min-width: 1024px) {
+  .order {
+    margin-top: 16px;
+  }
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
 }
 
 /*# sourceMappingURL=style.css.map */
