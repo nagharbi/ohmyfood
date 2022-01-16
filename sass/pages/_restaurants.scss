@@ -1,0 +1,63 @@
+.header__img{
+    width: 100%;
+    object-fit: cover;
+    @include tablet{
+        height: 300px;
+    }
+}
+main{
+    background-color: $bgcolor-secondary;
+}
+.lunch{
+    background-color: $bgcolor-secondary;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    top:-53px;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__container{
+        padding-bottom: 33px;
+    }
+    &__title{
+        @extend %fonttitle;
+        padding: 0 0 1px 35px;
+    }
+    &__heart{
+        @extend %heart;
+        top: 26px;
+        right: 32px;
+    }
+}
+.menu {
+    &__container{
+        background-color: #fff;
+        padding-left: 9px;
+        border-radius: 13px;
+        margin-bottom: 13px;
+        margin-left: 13px;
+        width: 92%;
+        @extend %shadow;
+        cursor: pointer;
+    }
+    &__title{
+        font-weight:normal;
+        @extend %fonttext;
+        padding: 17px;
+        &:hover{
+            text-decoration: 5px underline $bgcolor-tertiary;  
+        }
+    }
+    &__subtitle  {
+        @extend %fonttext;
+    }
+}
+
+.order{
+    @extend %flexcenter;
+    padding: 48px 0;
+    &__btn{
+        @include button;
+    }
+}

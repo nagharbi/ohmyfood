@@ -6,4 +6,9 @@
         font-weight: 300;
         @extend %fonttitle ;
     }
+    &__arrow{
+        position: absolute;
+        top: 31px;
+        left: 34px;
+    }
 }

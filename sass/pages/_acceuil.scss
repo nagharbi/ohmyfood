@@ -92,7 +92,8 @@
     @include tablet{
         width: 45%;
     }
-    margin-bottom: 27px;
+    @extend %shadow ; 
+     margin-bottom: 27px;
     margin-left: 15px;
     background-color: #fff;
     position: relative;
@@ -118,23 +119,6 @@
         padding:16px;
     }
     &__heart{
-        font-size: 25px;
-        display: flex;
-        position: relative;
-        width: 40px;
-        height: 32px;
-        cursor: pointer;
-        & :nth-child(2) {
-            color:transparent;
-            transition: all 350ms;
-        }
-        & :nth-child(2):hover {
-            background: linear-gradient(to right bottom, $color-secondary, $color-primary );
-            transform: scale(1.2);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            -o-background-clip: text;
-        }
+        @extend %heart;
     }
 }
