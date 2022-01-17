@@ -311,8 +311,20 @@ a {
   }
 }
 
-main {
+.main {
   background-color: #F6F6F6;
+}
+.main__img {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .main__img {
+    height: 300px;
+  }
+}
+.main__img--adjust {
+  height: 270px;
 }
 
 .lunch {

@@ -5,8 +5,18 @@
         height: 300px;
     }
 }
-main{
+.main{
     background-color: $bgcolor-secondary;
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        @include tablet{
+            height: 300px;
+        }
+        &--adjust{
+            height: 270px;
+        }
+    }
 }
 .lunch{
     background-color: $bgcolor-secondary;
