@@ -7,7 +7,7 @@
     }
 }
 
-@keyframes disappearance {
+@keyframes disappear {
     0% {
         opacity: 1;
         z-index: 10;
@@ -26,4 +26,4 @@
     100% {
       opacity: 1;
     }
-  }
+}

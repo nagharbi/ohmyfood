@@ -49,9 +49,6 @@
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   transform: scale(1.2);
   background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -o-background-clip: text;
 }
 
 @keyframes rotate {
@@ -62,7 +59,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes disappearance {
+@keyframes disappear {
   0% {
     opacity: 1;
     z-index: 10;
@@ -101,8 +98,8 @@ a {
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  animation-name: disappearance;
-  animation-duration: 0.01;
+  animation-name: disappear;
+  animation-duration: 0.01s;
   animation-delay: 2s;
   animation-fill-mode: both;
 }
@@ -111,6 +108,7 @@ a {
   position: absolute;
   top: 45%;
   left: 42%;
+  /* pour ajuster le spinner au centre de page en version dekstop*/
   width: 60px;
   height: 60px;
   border: 6px solid rgba(147, 86, 220, 0.2);
@@ -123,7 +121,7 @@ a {
   }
 }
 .spinner::before {
-  /*ajouter un content vide pour agisse comme un sélecteur , on peut ajouter un style css*/
+  /*ajouter un content vide pour agisse comme un sélecteur, on peut ajouter un style css*/
   content: "";
   position: absolute;
   top: -6px;
@@ -427,6 +425,7 @@ a {
   color: white;
   padding: 12px 24px;
   border-radius: 100px;
+  cursor: pointer;
 }
 .order__btn:hover {
   opacity: 0.75;

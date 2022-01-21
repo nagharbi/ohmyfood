@@ -4,7 +4,8 @@
   "description": "Troisième projet du parcours \"Développeur web\" chez OpenClassroom",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss --watch ./public/css/style.css --use autoprefixer -o ./public/css/style.prefixed.css"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "Nouha GHARBI",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/nagharbi/ohmyfood.github.io/issues"
   },
