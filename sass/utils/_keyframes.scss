@@ -1,3 +1,4 @@
+// Pour l'animation du spinner
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -7,6 +8,7 @@
     }
 }
 
+// Pour disparaitre le spinner
 @keyframes disappear {
     0% {
         opacity: 1;
@@ -15,10 +17,11 @@
 
     100% {
         opacity: 0;
-        z-index: -10; /*pour mettre le spinner au dessous de contenu de page */
+        z-index: -10; // Pour mettre le spinner au dessous de contenu de page
     }
 }
 
+// Animation pour apparaitre les plats des restaurants
 @keyframes appear {
     0% {
       opacity: 0;

@@ -1,4 +1,5 @@
 @mixin button {
+    // Créer un fond dégradé entre deux couleurs secondary et primary
     background: linear-gradient(to right bottom, $color-secondary, $color-primary );
     color: white;
     padding: 12px 24px;
@@ -6,16 +7,16 @@
     @extend %fonttext;
     @extend %shadow;
     &:hover{
-        opacity:0.75 ;
+        opacity:0.75;
     }
 }
 @mixin tablet {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
-        @content;
+        @content; // Passer un bloc de contenu à la mixin tablet 
     }
 }
 @mixin desktop {
     @media screen and (min-width: map-get($breakpoints, desktop)) {
-        @content;
+        @content; // Passer un bloc de contenu à la mixin desktop
     }
 }

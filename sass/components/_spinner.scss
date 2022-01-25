@@ -14,7 +14,7 @@
     position: absolute;
     top: 45%;
     left: 42%;
-    /* pour ajuster le spinner au centre de page en version dekstop*/
+    // Pour ajuster le spinner au centre de page en version dekstop
     @include desktop{
         top: 50%;
         left: 50%;
@@ -23,9 +23,8 @@
     height: 60px;
     border: 6px solid rgba($color-primary, 0.2);
     border-radius: 50%;
-    &::before {
-        /*ajouter un content vide pour agisse comme un sélecteur, on peut ajouter un style css*/
-        content: "";
+    &::before { // Creer un pseudo-élement qui sera 1ére enfant d'un element
+        content: ""; // Pour ajouter du contenu esthetique à un élement, afin de générer le contenu d'un élement.
         position: absolute;
         top: -6px;
         left: -6px;

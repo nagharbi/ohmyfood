@@ -20,6 +20,7 @@
 %ellipsis {
     margin: 0;
     white-space: nowrap;
+    /* pour remplacer le contenu textuel qui dépasse par une ellipse '...' */
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -35,8 +36,9 @@
         transition: all 350ms;
     }
     & :nth-child(2):hover {
+        /* créer un fond qui est dégradé entre deux couleurs secondary et primary */
         background: linear-gradient(to right bottom, $color-secondary, $color-primary );
         transform: scale(1.2);
-        background-clip: text;
+        background-clip: text; /* Pour ajuster le fond de la couleur à l'intérieur de l'icon au moment du survol */
     }
 }

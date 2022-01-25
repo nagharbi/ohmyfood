@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nagharbi/ohmyfood.github.io.git"
+    "url": "git+https://github.com/nagharbi/ohmyfood.git"
   },
   "author": "Nouha GHARBI",
   "license": "ISC",
   "browserslist": "last 4 versions",
   "bugs": {
-    "url": "https://github.com/nagharbi/ohmyfood.github.io/issues"
+    "url": "https://github.com/nagharbi/ohmyfood/issues"
   },
-  "homepage": "https://github.com/nagharbi/ohmyfood.github.io#readme"
+  "homepage": "https://github.com/nagharbi/ohmyfood#readme"
 }

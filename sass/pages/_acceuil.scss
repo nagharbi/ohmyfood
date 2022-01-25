@@ -1,4 +1,4 @@
-/*1 ere section*/ 
+/* La partie location */
 .location{
     background-color: $bgcolor-primary;
     @extend %flexcenter;
@@ -10,7 +10,7 @@
         margin-right: 16px;
     }
 }
-/* 2eme section*/
+/* 1er section */
 .description{
     background-color: $bgcolor-secondary;
     text-align: center;
@@ -28,7 +28,7 @@
        @include button;
     }
 }
-/* 3eme section*/
+/* 2eme section */
 .manuel{
     padding: 8px 20px;
     @extend %fonttext;
@@ -70,7 +70,7 @@
         color: $bgcolor-tertiary;
     }
 }
-/*4 eme section*/
+/* 3eme section */
 .restaurant{
     background-color: $bgcolor-secondary;
     width: 100%;
