@@ -4,10 +4,13 @@
     color: white;
     padding: 12px 24px;
     border-radius: 100px;
+    transition: all 500ms linear;
+    cursor: pointer;
     @extend %fonttext;
     @extend %shadow;
     &:hover{
         opacity:0.75;
+        box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.5);
     }
 }
 @mixin tablet {
