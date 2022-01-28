@@ -100,10 +100,7 @@ a {
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  animation-name: disappear;
-  animation-duration: 0.01s;
-  animation-delay: 2s;
-  animation-fill-mode: both;
+  animation: disappear 0.01s 2s both;
 }
 
 .spinner {
